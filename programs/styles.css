@@ -1,0 +1,30 @@
+
+@font-face {
+  font-family: 'proza';
+  src:    url('./ProzaLibre-Medium.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proza-light';
+  src:    url('./ProzaLibre-Light.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  color: black;
+  font-family: 'proza-light';
+  padding: 10px;
+  margin: 0;
+  font-size: 16px;
+  outline: 1px solid black;
+}
