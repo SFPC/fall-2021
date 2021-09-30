@@ -103,7 +103,7 @@ function hyphensToList(hyphenString, destinationSelector){
         if(element.length > 0) $(destinationSelector).append(`<li>${element}</li>`)
     });
 }
-function addTeacher(program, num){
+function addTeacher(program, num, destinationSelector){
     let teacher = "teacher"+num
     let teacherImg = program[teacher+"Img"] ? program[teacher+"Img"] : defaultImage
     let href = program[teacher+"Link"] ? `href='${program[teacher+"Link"]}'` : ''
@@ -115,5 +115,5 @@ function addTeacher(program, num){
     </article>
     <BR><BR>
   `
-  $('#teacher-list').append(teacherHTML)
+  $(destinationSelector).append(teacherHTML)
 }
