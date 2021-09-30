@@ -65,7 +65,7 @@ function hyphensToList(hyphenString, destinationSelector){
 }
 function addTeacher(program, num, destinationSelector){
   let teacher = "teacher"+num
-  let teacherImg = program[teacher+"Img"] ? program[teacher+"Img"] : defaultImage
+  let teacherImg = program[teacher+"Img"] ? program[teacher+"Img"] : ""
   let href = program[teacher+"Link"] ? `href='${program[teacher+"Link"]}'` : ''
   let teacherHTML = `
   <article class="teacher" id="teacher${num}">
