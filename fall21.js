@@ -3,11 +3,19 @@ function scale (number, inMin, inMax, outMin, outMax) {
 }
 
 var colours = [
-  "red",
-  "cornflowerblue",
-  "darkorchid",
-  "blue",
-  "orange"
+  // "red",
+  // "cornflowerblue",
+  // "darkorchid",
+  // "blue",
+  // "orange"
+  "#777744",
+  "#aa6622",
+  "#ee0011",
+  "#aa6600",
+  "#008855",
+  "#dd1188",
+  "#8866aa",
+  "#4466ff"
 ];
 
 function getColour() {
