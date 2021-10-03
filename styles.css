@@ -761,8 +761,9 @@ p a:hover {
 }
 
 .programs-list h2 span, .session h2 span, .session-info .labels-info span.price, .session-info p span.price{
-  background: var(--text-color);
-  border-radius: 100%;
+  background: var(--primary-color);
+  border-radius: 5px;
+  padding: 5px;
   color: var(--background);
   /* padding: 0px 20px; */
   text-shadow: none;
