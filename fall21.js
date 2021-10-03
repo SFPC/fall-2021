@@ -6,10 +6,7 @@ function scale (number, inMin, inMax, outMin, outMax) {
 $(window).scroll(function(){
   var scrollTop = $(window).scrollTop();
 
-  if ScrollTop > 0 {
-    $('.support-second').removeClass('collapsed'));
-    $('.support-first').addClass('collapsed'));
-  }
+
   var pageHeight = $(document).height();
 
   var scaleScoll = scale (scrollTop, 0, pageHeight, 1, 5);
