@@ -66,9 +66,9 @@ function fillPageContent(program){
   }
   else $('#whatWillIGetFromThis').parent().hide()
   // $('#whatWillIGetFromThis').text(program.whatWillIGetFromThis)
-  $('#class').fadeIn()
-  $('#class')[0].scrollIntoView(true)
-  $('#footer').fadeIn()
+  // $('#class').fadeIn()
+  // $('#class')[0].scrollIntoView(true)
+  // $('#footer').fadeIn()
 
 
 }
