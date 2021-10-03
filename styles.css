@@ -103,6 +103,8 @@ img {
 }
 
 .portal {
+  transform: scale(1);
+    transition: transform 1s ease-out;
   display: block;
   margin-top: -25vh;
   margin-left: auto;
@@ -688,7 +690,7 @@ h2 {
 }
 
 .class-each.active .class-bullet  {
-  background: radial-gradient(#000fff, #fff, #fff);
+  background: radial-gradient(#000fff, transparent, transparent);
 }
 
 
