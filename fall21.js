@@ -2,6 +2,22 @@ function scale (number, inMin, inMax, outMin, outMax) {
     return (number - inMin) * (outMax - outMin) / (inMax - inMin) + outMin;
 }
 
+var colors = [
+  "red",
+  "green",
+  "lime",
+  "purple",
+  "blue"
+];
+
+function getColor() {
+   return colors[
+     Math.floor(Math.random() * colors.length)
+   ];
+}
+
+document.documentElement.style.setProperty('--primary-color', getColor());
+
 
 $(window).scroll(function(){
   var scrollTop = $(window).scrollTop();

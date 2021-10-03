@@ -14,7 +14,7 @@
     /* rgb(115, 0, 113); */
     /* rgb(110, 0, 161) */
     /*purple*/
-    --primary-color: #0000FF;
+    --primary-color: var(--primary-color);
     /* #ff6e47; */
     /* rgb(248, 201, 11); */
     /*yellow*/
@@ -112,7 +112,7 @@ img {
   height: 150vh;
   width: 150vh;
   opacity: .9;
-  background: radial-gradient(#000fff, #fff, #fff);
+  background: radial-gradient(var(--primary-color), #fff, #fff);
 }
 
 .shell {
@@ -238,11 +238,11 @@ a.peek:hover {
 .footerlinks.apply {
   background-color: var(--primary-color);
   border-color:var(--primary-color);
-  box-shadow: 0 0 10px #0000ff;
+  box-shadow: 0 0 10px var(--primary-color);
 }
 
 .footerlinks.apply:hover {
-  box-shadow: 0 0 25px #0000ff;
+  box-shadow: 0 0 25px var(--primary-color);
   background-color: #000;
 }
 .footerlinks.support {
@@ -253,7 +253,7 @@ a.peek:hover {
 
 .footerlinks.support:hover {
   box-shadow: 0 0 25px #000;
-  background-color: #0000ff;
+  background-color: var(--primary-color);
 }
 
 
@@ -628,7 +628,7 @@ h2 {
 }
 .class-each:hover h3 {
   opacity: 1;
-  color: #0000ff;
+  color: var(--primary-color);
 }
 .class-each:hover .class-bullet{
   background: radial-gradient(rgb(0,0,0), transparent, transparent);
@@ -657,7 +657,7 @@ h2 {
 }
 
 .class-each.active .class-bullet  {
-  background: radial-gradient(#000fff, transparent, transparent);
+  background: radial-gradient(var(--primary-color), transparent, transparent);
 }
 
 
@@ -1144,7 +1144,7 @@ a.expand.active {
     height: 150vw;
     width: 150vw;
     opacity: .9;
-    background: radial-gradient(#000fff, #fff, #fff);
+    background: radial-gradient(var(--primary-color), #fff, #fff);
   }
 
 
