@@ -662,11 +662,11 @@ h2 {
   color: #0000ff;
 }
 .class-each:hover .class-bullet{
-  background: radial-gradient(rgb(0,0,0), #fff, #fff);
+  background: radial-gradient(rgb(0,0,0), transparent, transparent);
 }
 
 .class-each.active:hover .class-bullet{
-  background: radial-gradient(rgb(0,0,0), #fff, #fff);
+  background: radial-gradient(rgb(0,0,0), transparent, transparent);
 }
 
 .class-each.active h3 {
@@ -680,7 +680,7 @@ h2 {
   width: 6vw;
   height: 6vw;
   margin-left: -1vw;
-  background: radial-gradient(#fff, #fff, #fff);
+  background: radial-gradient(transparent, transparent, transparent);
   -moz-transition: all .2s ease-out;
   ms-transition: all .2s ease-out;
   o-transition: all .2s ease-out;
@@ -1162,6 +1162,19 @@ a.expand.active {
 }
 
 @media (max-width: 768px) {
+
+
+  .portal {
+    display: block;
+    margin-left: -25vw;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 150vw;
+    width: 150vw;
+    opacity: .9;
+    background: radial-gradient(#000fff, #fff, #fff);
+  }
+
 
 
   .shell {
