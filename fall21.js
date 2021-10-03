@@ -2,21 +2,21 @@ function scale (number, inMin, inMax, outMin, outMax) {
     return (number - inMin) * (outMax - outMin) / (inMax - inMin) + outMin;
 }
 
-var colors = [
+var colours = [
   "red",
-  "green",
-  "lime",
-  "purple",
-  "blue"
+  "cornflowerblue",
+  "darkorchid",
+  "blue",
+  "orange"
 ];
 
-function getColor() {
-   return colors[
-     Math.floor(Math.random() * colors.length)
+function getColour() {
+   return colours[
+     Math.floor(Math.random() * colours.length)
    ];
 }
 
-document.documentElement.style.setProperty('--primary-color', getColor());
+document.documentElement.style.setProperty('--primary-color', getColour());
 
 
 $(window).scroll(function(){
