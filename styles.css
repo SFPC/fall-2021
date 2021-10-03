@@ -718,7 +718,9 @@ p a:hover {
     margin-bottom: calc(var(--text-margin) * 2);
 }
 
-.programs-list h2 span, .session h2 span, .session-info .labels-info span.price, .session-info p span.price{
+.programs-list h2 span, .session h2 span
+/* , .session-info .labels-info span.price, .session-info p span.price */
+{
   background: var(--primary-color);
   border-radius: 5px;
   padding: 5px;
