@@ -864,7 +864,7 @@ p a:hover {
 }
 
 .class{
-  margin-top: calc(var(--text-margin) * 2);
+  margin-top: var(--body-margin);
 }
 
 .session-text p.visible,  p.visible {
