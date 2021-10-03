@@ -86,17 +86,6 @@ img {
     max-width: 100%;
 }
 
-img.spiral {
-    height: auto;
-    width: 100vw;
-    /* height: 50vw;
-    width: 50vw;
-    margin-left: 25vw; */
-    position: absolute;
-    z-index: 9;
-    opacity: .3;
-    mix-blend-mode: screen;
-}
 
 
 .bgImg.classPage img.spiral {
@@ -898,7 +887,8 @@ p.visible,  #info li{
 }
 
 a.social:before{
-   content: '⁙ ';
+   content: '• ';
+   color: var(--primary-color);
 }
 
 p.visible {
@@ -957,6 +947,7 @@ p.visible {
 }
 
 .session-info {
+  margin-top: var(--body-margin);
   width: 100%;
   margin: 0px auto;
   display: block;
@@ -1058,7 +1049,8 @@ p.visible {
 }
 
 .session-info .description li:before{
-   content: '⁙ ';
+   content: '• ';
+   color: var(--primary-color);
 }
 
 .session-info .description {
@@ -1135,6 +1127,11 @@ a.expand.active {
 }
 
 
+.endclass {
+  display: block;
+  height: 15vh;
+}
+
 .hidedesk {
   display: none;
   opacity: 0;
@@ -1164,6 +1161,28 @@ a.expand.active {
 }
 
 @media (max-width: 768px) {
+
+
+  .shell {
+    position: relative;
+    /* top: 0px; */
+    left: 0vw;
+    height: 100vh;
+    width: 100vw;
+    z-index: 11;
+  }
+
+  .titles {
+    position: relative;
+    top: 0px;
+    left: 0vw;
+    padding: var(--body-margin);
+    height: auto;
+    width: 100vw;
+    z-index: 11;
+  }
+
+
      :root {
         --text-margin: 7vh;
         --body-margin: 4vw;
@@ -1181,7 +1200,7 @@ a.expand.active {
 
     .session-info {
       width: 92vw;
-      margin: 0px auto;
+      margin: 150px auto 0px auto;
       display: block;
       /* background: #fff; */
     }
@@ -1196,8 +1215,8 @@ a.expand.active {
 
 
 
-
-    h1, .programs-list h2,  .session-info .details .labels,
+    h1,
+    .programs-list h2,  .session-info .details .labels,
     p.visible,  #info li, .session-info .details .labels-info, .session-info .description p, .session-info article.teacher,
     .session-info .description li,
     .session-info .description h2 li:before,
@@ -1206,11 +1225,30 @@ a.expand.active {
         font-size: 4.5vw !important;
     }
 
-    p,
+    h2, h3, p,
     .peek a, .session-info h2,
     .session-info .description h2, .session-programs-title, #section-description > h2{
         font-size: 8vw !important;
     }
+
+    .class-each h3 {
+        font-size: 3.5vw;
+        margin: 1vw 0;
+        color: var(--text-color);
+        font-weight: lighter;
+        opacity: .3;
+        float: right;
+        display: inline-block;
+        width: 80vw;
+    }
+
+    .class-bullet {
+      width: 12vw;
+      height: 12vw;
+      margin-left: -1vw;
+    }
+
+
 
     .session-programs-title {
       text-decoration: none;
@@ -1289,6 +1327,9 @@ a.expand.active {
       visibility: hidden;
     }
 
+    #footer {
+      height: auto;
+    }
 }
 
 .expanded {
