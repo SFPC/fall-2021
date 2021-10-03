@@ -768,7 +768,7 @@ p a:hover {
   /* margin-right: 10px; */
   /* margin-bottom: 10px; */
   vertical-align: bottom;
-  border: 2px solid var(--text-color);
+  /* border: 2px solid var(--text-color); */
   width: 3.5vw;
   height: 3.5vw;
   background-size: cover;
@@ -776,25 +776,26 @@ p a:hover {
   ms-transition: all .2s ease-out;
   o-transition: all .2s ease-out;
   transition: all .2s ease-out;
+  border-radius: 100% 100%;
 }
 
 .bio-1, .bio-6 {
-  border-radius: 100% 80%;
+  border-radius: 100% 100%;
 }
 
 .bio-2, .bio-4 {
-  border-radius:  75% 100%;
+  border-radius:  100% 100%;
 }
 
 .bio-3, .bio-5, .bio-0, .bio- {
-  border-radius: 90% 75%;
+  border-radius: 100% 100%;
 }
 
 #section-teachers .bio {
   float: left;
   margin-right: 10px;
   margin-bottom: 10px;
-  border: 2px solid var(--text-color);
+  /* border: 2px solid var(--text-color); */
   width: 8vw;
   height: 8vw;
   background-size: cover;
@@ -805,7 +806,7 @@ p a:hover {
 }
 
 .bio:hover  {
-  border: 2px solid var(--primary-color);
+  /* border: 2px solid var(--primary-color); */
 }
 .programs-list p, .session p {
     color: var(--text-color);
