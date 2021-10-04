@@ -634,6 +634,21 @@ h2 {
     font-weight: lighter;
 }
 
+.social {
+  color: var(--primary-color);
+  font-size: 3vw;
+  font-weight: lighter;
+}
+.bull {
+  font-size: 5vw;
+  line-height: 3vw;
+  margin-top: 2vw;
+}
+
+.social:hover {
+  color: var(--text-color);
+}
+
 .class-each, .class-bullet, .class-each:hover {
   -moz-transition: all .2s ease-out;
   ms-transition: all .2s ease-out;
@@ -778,12 +793,12 @@ p a:hover {
   ms-transition: all .2s ease-out;
   o-transition: all .2s ease-out;
   transition: all .2s ease-out;
-  border-radius: 1.3vw;
+  border-radius: 0vw;
 }
 
 .bio-1, .bio-6,
 .bio-3, .bio-5, .bio-0, .bio- {
-  border-radius: 1.3vw;
+  border-radius: 0vw;
 }
 
 #section-teachers .bio {
@@ -882,10 +897,13 @@ p.visible,  #info li{
   list-style: none;
 }
 
-a.social:before{
+
+/* a.social:before{
    content: '• ';
-   color: var(--primary-color);
-}
+   color: var(--text-color);
+   text-decoration: none !important;
+   font-size: 5vw;
+} */
 
 p.visible {
   margin-bottom: 0px !important;
@@ -1230,7 +1248,7 @@ a.expand.active {
 
 
 
-    h1,
+    h1, .social,
     .programs-list h2,  .session-info .details .labels,
     p.visible,  #info li, .session-info .details .labels-info, .session-info .description p, .session-info article.teacher,
     .session-info .description li,
