@@ -862,13 +862,13 @@ p a:hover {
 .floatpara img.left {
   float: left;
   margin: 1vw 1vw 1vw 0;
-  width: calc(50% - 2vw);
+  width: calc(50% - 1vw);
 }
 
 .floatpara img.right {
   float: right;
   margin: 1vw 0 1vw 1vw;
-  width: calc(50% - 2vw);
+  width: calc(50% - 1vw);
 }
 
 .quotes {
@@ -1359,6 +1359,13 @@ a.expand.active {
       width: 12vw;
       height: 12vw;
       margin-left: -1vw;
+    }
+
+    .floatpara img.full,
+    .floatpara img.left,
+    .floatpara img.right {
+      width: calc(100%);
+      margin: 1vw 0px;
     }
 
 
