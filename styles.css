@@ -830,6 +830,7 @@ p a:hover {
   border-radius:1vw;
 }
 
+
 #section-teachers .bio {
   float: left;
   margin-right: 10px;
@@ -846,6 +847,14 @@ p a:hover {
 
 .bio:hover  {
   /* border: 2px solid var(--primary-color); */
+}
+
+.quotes {
+  display: flex;
+}
+
+p.quote {
+  margin:0 1.5vw 0 0;
 }
 .programs-list p, .session p {
     color: var(--text-color);
