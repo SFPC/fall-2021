@@ -10,7 +10,7 @@ function fillPageContent(program){
   $('#byline').html(`<span class="teacherName"></span><span class="TAName"></span>`)
 
   $('.teacherName').text(program.teacher)
-  if(program.teacher2) $('.TAName').text(" with " + program.teacher2)
+  if(program.teacher2) $('.TAName').text(" with " + program.teacher2 )
   else $('.TAName').text("")
   if(program.byline) $('#byline').text(program.byline)
   $('#date').text(program.date)
