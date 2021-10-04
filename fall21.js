@@ -57,4 +57,6 @@ $(document).ready(function(){
     $("#changecolour").on('click', function(){
             document.documentElement.style.setProperty('--primary-color', getColour());
         });
+
+        $('#class').fadeIn();
 });
