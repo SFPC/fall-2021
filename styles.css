@@ -1276,7 +1276,7 @@ a.expand.active {
 
 
 
-    h1, .social,
+    h1,
     .programs-list h2,  .session-info .details .labels,
     p.visible,  #info li, .session-info .details .labels-info, .session-info .description p, .session-info article.teacher,
     .session-info .description li,
@@ -1306,7 +1306,7 @@ a.expand.active {
       margin-bottom: calc(var(--body-margin)/2) ;
     }
 
-    h2, h3, p,
+    h2, h3, p,.social,
     .peek a, .session-info h2,
     .session-info .description h2, .session-programs-title, #section-description > h2{
         font-size: 8vw !important;
