@@ -44,4 +44,10 @@ $(window).scroll(function(){
 
 
 
-})
+});
+
+function sectionJump(value){
+  var top = document.getElementById(value).offsetTop - 100;
+  window.scrollTo(0, top);
+	//document.getElementById(value).scrollIntoView();
+}
