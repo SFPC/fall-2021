@@ -753,11 +753,12 @@ p,
 }
 
 .break-sect img {
+    border-radius: 1vw;
     width: 30vw;
     height: auto;
-    border-image: url(lineborder.png) 34 / 18px / 0 round;
-    border-width: 18px;
-    border-style: solid;
+    /* border-image: url(lineborder.png) 34 / 18px / 0 round; */
+    /* border-width: 18px;
+    border-style: solid; */
     /* border-width: 2px;
     border-color: var(--text-color);
     border-style: dotted dashed solid double; */
@@ -1168,7 +1169,7 @@ a.expand.active {
 }
 
 .introImg {
-    margin-top: 5vh;
+    padding-top: var(--body-margin);
 }
 
 .collapsed {
