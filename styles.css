@@ -134,6 +134,20 @@ img {
   z-index: 11;
 }
 
+.titles h1 a {
+  text-decoration: none;
+  transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  ms-transition: all .2s ease-out;
+  o-transition: all .2s ease-out;
+}
+.titles h1 a:hover {
+  color: #000;
+}
+
+section h2 a:hover {
+  color: var(--primary-color);
+}
 a {
     color: inherit;
 }
@@ -233,6 +247,20 @@ a.peek:hover {
     border: 1px solid;
     margin-left: .5vw;
     vertical-align: bottom;
+}
+
+.footerlinks.color {
+  width: 1.7vw;
+  height: 1.7vw;
+  background-color: var(--primary-color);
+  color: var(--primary-color);
+  border-color:var(--primary-color);
+  box-shadow: 0 0 10px var(--primary-color);
+}
+
+.footerlinks.color:hover {
+  box-shadow: 0 0 25px var(--primary-color);
+  background-color: #000;
 }
 
 .footerlinks.apply {
@@ -793,12 +821,12 @@ p a:hover {
   ms-transition: all .2s ease-out;
   o-transition: all .2s ease-out;
   transition: all .2s ease-out;
-  border-radius: 0vw;
+  border-radius: 1vw;
 }
 
 .bio-1, .bio-6,
 .bio-3, .bio-5, .bio-0, .bio- {
-  border-radius: 0vw;
+  border-radius:1vw;
 }
 
 #section-teachers .bio {
@@ -998,8 +1026,8 @@ p.visible {
   padding-top: var(--body-margin);
 }
 
-.session-info .description h2 {
-  line-height: 1.3;
+.session-info .description h2, .session-info h2 {
+  line-height: 1.3 !important;
   margin-bottom: 3vh;
   font-size: 3vw;
 }

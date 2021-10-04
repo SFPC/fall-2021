@@ -51,3 +51,10 @@ function sectionJump(value){
   window.scrollTo(0, top);
 	//document.getElementById(value).scrollIntoView();
 }
+
+
+$(document).ready(function(){
+    $("#changecolour").on('click', function(){
+            document.documentElement.style.setProperty('--primary-color', getColour());
+        });
+});
