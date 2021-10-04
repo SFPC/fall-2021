@@ -7,7 +7,7 @@ function fillPageContent(program){
   $('#class').addClass(program.urlTitle)
   if(program.classImage) $('#programImg').attr('src', program.classImage).attr('alt', program.classImageAltText)
   $('.title').text(program.title)
-  $('#byline').html(`<span class="teacherName"></span><span class="TAName"></span>`)
+  // $('#byline').html(`<span class="teacherName"></span><span class="TAName"></span>`)
 
   $('.teacherName').text(program.teacher)
   if(program.teacher2) $('.TAName').text(" with " + program.teacher2 )
