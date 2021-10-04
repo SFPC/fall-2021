@@ -65,7 +65,7 @@ function fillPageContent(program){
       hyphensToList(program.whatWillIGetFromThis, "#whatWillIGetFromThis")
   }
   else $('#whatWillIGetFromThis').parent().hide()
-  $('#whatWillIGetFromThis').text(program.whatWillIGetFromThis)
+  // $('#whatWillIGetFromThis').text(program.whatWillIGetFromThis)
   $('#class').fadeIn()
   // $('#class')[0].scrollIntoView(true)
   // $('#footer').fadeIn()
