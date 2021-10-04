@@ -657,8 +657,8 @@ h1.right {
     /* margin-bottom: var(--text-margin); */
 }
 
-h2 {
-    font-size: 2.5vw;
+h2, p.large {
+    font-size: 2.5vw !important;
     font-weight: lighter;
 }
 
@@ -847,6 +847,28 @@ p a:hover {
 
 .bio:hover  {
   /* border: 2px solid var(--primary-color); */
+}
+
+.floatpara img {
+  border-radius: 1vw;
+}
+
+.floatpara img.full {
+  /* float: left; */
+  margin: 1vw 1vw 1vw 0;
+  width: calc(100% - 2vw);
+}
+
+.floatpara img.left {
+  float: left;
+  margin: 1vw 1vw 1vw 0;
+  width: calc(50% - 2vw);
+}
+
+.floatpara img.right {
+  float: right;
+  margin: 1vw 0 1vw 1vw;
+  width: calc(50% - 2vw);
 }
 
 .quotes {
@@ -1316,7 +1338,7 @@ a.expand.active {
       margin-bottom: calc(var(--body-margin)/2) ;
     }
 
-    h2, h3, p,.social,
+    h2, h3, p,.social, p.large, #section-sfpc p.large,
     .peek a, .session-info h2,
     .session-info .description h2, .session-programs-title, #section-description > h2{
         font-size: 8vw !important;
