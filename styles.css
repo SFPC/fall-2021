@@ -657,9 +657,14 @@ h1.right {
     /* margin-bottom: var(--text-margin); */
 }
 
-h2, p.large {
+h2 {
     font-size: 2.5vw !important;
     font-weight: lighter;
+}
+
+ p.large {
+   font-size: 3vw !important;
+   font-weight: lighter;
 }
 
 .social {
@@ -857,6 +862,16 @@ p a:hover {
   /* float: left; */
   margin: 1vw 1vw 1vw 0;
   width: calc(100% - 2vw);
+}
+
+a img {
+  -moz-transition: all .2s ease-out;
+  ms-transition: all .2s ease-out;
+  o-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+a img:hover {
+  opacity: .7;
 }
 
 .floatpara img.left {
