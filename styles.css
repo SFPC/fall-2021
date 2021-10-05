@@ -849,11 +849,11 @@ p a:hover {
   /* border: 2px solid var(--primary-color); */
 }
 
-.floatpara img {
+.floatpara img, .description img {
   border-radius: 1vw;
 }
 
-.floatpara img.full {
+.floatpara img.full, img.full {
   /* float: left; */
   margin: 1vw 1vw 1vw 0;
   width: calc(100% - 2vw);
@@ -1361,7 +1361,7 @@ a.expand.active {
       margin-left: -1vw;
     }
 
-    .floatpara img.full,
+    .floatpara img.full, img.full,
     .floatpara img.left,
     .floatpara img.right {
       width: calc(100%);
