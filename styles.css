@@ -866,7 +866,7 @@ p a:hover {
   border-radius: 1vw;
 }
 
-.description img  {
+.description img.full  {
   margin-bottom: var(--body-margin);
 }
 
