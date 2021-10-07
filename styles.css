@@ -1426,6 +1426,11 @@ a.expand.active {
         margin-bottom: 10px;
     }
 
+
+    .description img.full  {
+      width: calc(100% ) !important;
+    }
+
     .intro-text {
         color: var(--text-color);
         /* text-shadow: 1px 1px 1px var(--background-shadow-purple); */
