@@ -1137,6 +1137,15 @@ p.visible {
         padding-right: calc(var(--body-margin) * 2);
 }
 
+section a {
+  transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  ms-transition: all .2s ease-out;
+  o-transition: all .2s ease-out;
+}
+section a:hover {
+  color: var(--primary-color);
+}
 .session-info section:hover, .session-info.touched {
   /* background-color: var(--background);
   box-shadow: 0 0 20px var(--background); */
