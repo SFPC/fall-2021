@@ -164,7 +164,7 @@ a.peek,
     text-align-last: justify;
     letter-spacing: -0.1em;
     width: 100%; */
-    text-decoration: underline;
+    /* text-decoration: underline; */
     cursor: pointer;
 }
 a.peek
