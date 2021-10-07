@@ -821,7 +821,7 @@ p a:hover {
 
 
 
-.intro-text .bio {
+.intro-text .bio, .bio {
   /* float: left; */
   display: inline-block;
   /* margin-right: 10px; */
@@ -838,7 +838,7 @@ p a:hover {
   border-radius: 1vw;
 }
 
-.bio-1, .bio-6,
+.bio-1, .bio-6, .bio-2, .bio-4,
 .bio-3, .bio-5, .bio-0, .bio- {
   border-radius:1vw;
 }
