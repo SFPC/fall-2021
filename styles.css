@@ -1426,6 +1426,18 @@ a.expand.active {
         width: 80vw;
     }
 
+    .class-each h4 {
+        font-size: 3.5vw;
+        margin: 1vw 0;
+        color: var(--text-color);
+        font-weight: lighter;
+        opacity: .3;
+        float: right;
+        display: inline-block;
+        width: 80vw;
+    }
+
+
     .class-bullet {
       width: 12vw;
       height: 12vw;
