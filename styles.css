@@ -711,6 +711,21 @@ p.large i {
     transition: all .2s ease-out;
 }
 
+.class-each h4 {
+    font-size: 1.5vw;
+    margin: 0 0 1vw 0;
+    color: var(--text-color);
+    font-weight: lighter;
+    opacity: .3;
+    float: right;
+    display: inline-block;
+    width: 30vw;
+    -moz-transition: all .2s ease-out;
+    ms-transition: all .2s ease-out;
+    o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+
 .class-each:hover ~ h1 {
   color: #000;
 }
@@ -718,6 +733,12 @@ p.large i {
   opacity: 1;
   color: var(--primary-color);
 }
+
+.class-each:hover h4 {
+  opacity: 1;
+  color: var(--text-color);
+}
+
 .class-each:hover .class-bullet{
   background: radial-gradient(rgb(0,0,0), transparent, transparent);
 }
@@ -728,6 +749,11 @@ p.large i {
 
 .class-each.active h3 {
   opacity: 1;
+}
+
+.class-each.active h4 {
+  opacity: 1;
+  color: var(--primary-color);
 }
 
 .class-bullet {
