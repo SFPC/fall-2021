@@ -884,6 +884,20 @@ p a:hover {
   transition: all .2s ease-out;
 }
 
+
+#section-participants .bio {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 8vw;
+  height: 8vw;
+  background-size: cover;
+  -moz-transition: all .2s ease-out;
+  ms-transition: all .2s ease-out;
+  o-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
 .bio:hover  {
   /* border: 2px solid var(--primary-color); */
 }
