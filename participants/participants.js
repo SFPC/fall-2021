@@ -1,4 +1,4 @@
-const sheetTSVUrl =  "https://docs.google.com/spreadsheets/d/1MNyUoUVDi_gPRhzC0s2wRVsRj7YlaZZYJ1Oh-5Ycv-I/edit#gid=1600347309"
+const sheetTSVUrl =  "https://docs.google.com/spreadsheets/d/e/2PACX-1vS_gS_MyOn17RyyfkZEaMhDzm9ZK8smTy_bnkv9stYCKbXRJTATd8VqGvu5tSnAR651cLKkpqIIwAJN/pub?gid=1600347309&single=true&output=tsv"
 
 loadSheetData(sheetTSVUrl, function(data){
   console.log(data)
@@ -8,24 +8,25 @@ loadSheetData(sheetTSVUrl, function(data){
 })
 
 function addParticipantDiv(p){
-  const sessionId = p["Session(s) attended"] ? "#" + p["Session(s) attended"].slice(0,3) : ""
-  const pronouns = p["Your pronouns"] ? p["Your pronouns"].toLowerCase() : ""
-  const photoId = p["Upload a photo of you to go with your bio : )"] ? p["Upload a photo of you to go with your bio : )"].split("=")[1] : ""
+  const sessionId = "#RTP"
+  // const sessionId = p["Session(s) attended"] ? "#" + p["Session(s) attended"].slice(0,3) : ""
+  const pronouns = p["Pronouns"] ? p["Pronouns"].toLowerCase() : ""
+  const photoId = p["Photo"] ? p["Photo"].split("=")[1] : ""
   console.log(photoId)
   const instagram = p.Instagram ? `<a href="${p.Instagram}" target="_blank">instagram</a> · ` : ""
   const twitter = p.Twitter ? `<a href="${p.Twitter}" target="_blank">twitter</a> · ` : ""
-  const arena = p["Are.na"] ? `<a href="${p["Are.na"]}" target="_blank">are.na</a>` : ""
-  const socials = instagram + twitter + arena
+  const socials = instagram || twitter ? "· " + instagram + twitter : ""
+  const bio = p.Bio ? p.Bio : p.Learn
   const participantDiv = `
   <div class="session-info">
     <div class="description">
   <section>
     <div class="participantDiv">
-  <h1><a href="${p.Website}" target="_blank">${p["Your first and last name"]}</a> (${pronouns})</h1>
+  <h1><a href="${p.Website}" target="_blank">${p["Name"]}</a> (${pronouns})</h1>
 <br><BR>
   <span class="bio" style="background-image: url('https://drive.google.com/uc?export=view&id=${photoId}')" role="img"></span>
 
-  <p>${p["Please share your bio. In 150 words or less, introduce yourself. Invitation to talk about your practice, your history, and/or some of the things you are most interested in."]}<BR><BR>
+  <p>${bio}<BR><BR>
 ${socials}
 </p>
 </div>
