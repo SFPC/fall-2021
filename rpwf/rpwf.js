@@ -50,6 +50,7 @@ function fillPageContent(program){
   if(program.teacher4) addTeacher(program, "4", "#teacher-list")
   if(program.teacher5) addTeacher(program, "5", "#teacher-list")
   if(program.teacher6) addTeacher(program, "6", "#teacher-list")
+  if(program.teacher7) addTeacher(program, "7", "#teacher-list")
   $('#organizers').text(program.organizers)
   // $('#isThisForMe').text(program.isThisForMe)
   if (program.isThisForMe){
