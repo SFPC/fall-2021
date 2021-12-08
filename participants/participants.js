@@ -25,7 +25,7 @@ function addParticipantDiv(p){
   <span class="bio" style="background-image: url('https://drive.google.com/uc?export=view&id=${photoId}')" role="img"></span>
 
   <p><a href="${p.Website}" target="_blank">${p["Name"]}</a> (${pronouns}) · ${bio}
-${socials} <BR><BR>
+${socials} <BR><BR><BR>
 </p>
 </article>
 
