@@ -20,7 +20,7 @@ function addParticipantDiv(p){
   const participantDiv = `
 
 
-    <article id"section-participants" class="participantDiv">
+    <article id="section-participants" class="participantDiv">
 
   <span class="bio" style="background-image: url('https://drive.google.com/uc?export=view&id=${photoId}')" role="img"></span>
 

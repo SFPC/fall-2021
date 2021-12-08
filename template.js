@@ -109,8 +109,8 @@ function addTeacher(program, num, destinationSelector){
     let href = program[teacher+"Link"] ? `href='${program[teacher+"Link"]}'` : ''
     let teacherHTML = `
     <article class="teacher" id="teacher${num}">
-    <div><span class="bio bio-${num}" style="background-image: url(${teacherImg})" role="img" aria-label="A photo of ${program[teacher]}'s face"></span></div><img src=""> <a class="teacher${num}Name" ${href}>${program[teacher]}</a> (<span class="teacher${num}title">${program[teacher+"Title"]}</span>) ·
-    <span class="bioText">${program[teacher+"Bio"]}
+    <div><span class="bio bio-${num}" style="background-image: url(${teacherImg})" role="img" aria-label="A photo of ${program[teacher]}'s face"></span></div><img src=""> <a class="teacher${num}Name" ${href}>${program[teacher]}</a> (<span class="teacher${num}title">${program[teacher+"Title"]}</span>)
+    <span class="bioText"> · ${program[teacher+"Bio"]}
     </span>
     </article>
     <BR><BR>
