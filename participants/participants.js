@@ -15,7 +15,7 @@ function addParticipantDiv(p){
   console.log(photoId)
   const instagram = p.Instagram ? `<a href="${p.Instagram}" target="_blank">instagram</a> · ` : ""
   const twitter = p.Twitter ? `<a href="${p.Twitter}" target="_blank">twitter</a> · ` : ""
-  const socials = instagram || twitter ? "· " + instagram + twitter : ""
+  const socials = instagram || twitter ? "/ " + instagram + twitter : ""
   const bio = p.Bio ? p.Bio : p.Learn
   const participantDiv = `
 
