@@ -15,7 +15,7 @@ function addParticipantDiv(p){
   console.log(photoId)
   const instagram = p.Instagram ? `<a href="${p.Instagram}" target="_blank">instagram</a> · ` : ""
   const twitter = p.Twitter ? `<a href="${p.Twitter}" target="_blank">twitter</a> · ` : ""
-  const socials = instagram || twitter ? "" + instagram + twitter : ""
+  const socials = instagram || twitter ? "· " + instagram + twitter : ""
   const bio = p.Bio ? p.Bio : p.Learn
   const participantDiv = `
 
@@ -24,8 +24,8 @@ function addParticipantDiv(p){
 
   <span class="bio" style="background-image: url('https://drive.google.com/uc?export=view&id=${photoId}')" role="img"></span>
 
-  <p><a href="${p.Website}" target="_blank">${p["Name"]}</a> (${pronouns}) · ${bio}<BR><BR>
-${socials}
+  <p><a href="${p.Website}" target="_blank">${p["Name"]}</a> (${pronouns}) · ${bio}<BR>
+${socials} <BR><BR>
 </p>
 </article>
 
