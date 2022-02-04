@@ -9,7 +9,7 @@ loadSheetData(sheetTSVUrl, function(data){
 
 function addParticipantDiv(p){
   // const sessionId = "#RTP"
-  const sessionId = p["Session(s) attended"] ? "#" + p["Session(s) attended"].slice(0,3) : ""
+  const sessionId = p["Session(s) attended"] ? "#" + p["Session(s) attended"] : ""
   // const sessionId = p["Session(s) attended"] ? "#" + p["Session(s) attended"].slice(0,3) : ""
   const pronouns = p["Pronouns"] ? p["Pronouns"].toLowerCase() : ""
   const photoId = p["Photo"] ? p["Photo"].split("=")[1] : ""
